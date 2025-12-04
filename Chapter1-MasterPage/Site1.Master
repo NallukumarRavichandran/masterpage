@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="YourProject.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>My Website</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; }
+        .menu { background: #333; padding: 12px; }
+        .menu a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .menu a:hover { text-decoration: underline; }
+        .content { padding: 25px; }
+    </style>
+</head>
+<body>
+    <form runat="server">
+
+        <!-- MENU -->
+        <div class="menu">
+            <a href="Home.aspx">Home</a>
+            <a href="Services.aspx">Services</a>
+            <a href="About.aspx">About</a>
+            <a href="Contact.aspx">Contact</a>
+        </div>
+
+        <!-- CONTENT AREA -->
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MasterContent" runat="server" />
+        </div>
+
+    </form>
+</body>
+</html>
